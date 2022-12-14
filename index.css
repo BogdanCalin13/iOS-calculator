@@ -18,6 +18,10 @@ body {
 .calculator-wrapper .calculator-output {
     text-align: end;
     font-size: 4rem;
+    min-height: 5rem;
+    display: flex;
+    align-items: flex-end;
+    justify-content: end;
 }
 
 .calculator-wrapper .calculator-buttons-wrapper {
@@ -36,6 +40,13 @@ body {
     border: none;
     margin: 0.25rem;
     font-size: 2rem;
+    min-width: 4.5rem;
+    min-height: 4.5rem;
+}
+
+.calculator-wrapper .calculator-buttons-wrapper button:hover {
+    opacity: 75%;
+    transition: all ease-in-out 0.3s;
 }
 
 .calculator-wrapper .calculator-buttons-wrapper button.gray-actions {
@@ -46,6 +57,11 @@ body {
 .calculator-wrapper .calculator-buttons-wrapper button.yellow-actions {
     background-color: rgb(237, 144, 5);
     color: rgb(214, 214, 214);
+}
+
+.calculator-wrapper .calculator-buttons-wrapper button.yellow-actions.active {
+    background-color: rgb(214, 214, 214);
+    color: rgb(237, 144, 5);
 }
 
 .calculator-wrapper .calculator-buttons-wrapper button.input {
